@@ -1,0 +1,8 @@
+version: '2'
+services:
+    flarum:
+        build: .
+        ports:
+            - '9080:80'
+        volumes:
+            - /opt/cch/docker_vols/flarum/var_lib_mysql:/var/lib/mysql
